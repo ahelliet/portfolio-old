@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   pageExtensions: ['page.tsx', 'page.ts', 'api.ts', 'api.tsx'],
   images: {
-    domains: [''],
+    domains: ['media.graphassets.com'],
   },
 }
 
