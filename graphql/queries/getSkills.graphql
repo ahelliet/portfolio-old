@@ -1,0 +1,9 @@
+query getSkills {
+  skills(stage: PUBLISHED) {
+    id
+    skillCategory
+    order
+    name
+    icon
+  }
+}

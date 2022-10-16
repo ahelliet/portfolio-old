@@ -1,0 +1,9 @@
+query getSocials {
+  socials {
+    email
+    gitlabUrl
+    linkedinUrl
+    notionUrl
+    twitterUrl
+  }
+}

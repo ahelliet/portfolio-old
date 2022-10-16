@@ -1,0 +1,8 @@
+query getEvents {
+  events(stage: PUBLISHED, orderBy: publishedAt_DESC) {
+    description
+    icon
+    title
+    year
+  }
+}

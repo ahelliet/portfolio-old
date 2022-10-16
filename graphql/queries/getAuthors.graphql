@@ -1,0 +1,14 @@
+query getAuthors {
+  authors(stage: PUBLISHED) {
+    name
+    id
+    slug
+    picture {
+      height
+      width
+      url
+    }
+    intro
+    bio
+  }
+}

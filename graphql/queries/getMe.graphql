@@ -1,0 +1,13 @@
+query getMe {
+  author(where: {name: "Anthony"}) {
+    id
+    bio
+    intro
+    name
+    picture {
+      url
+      width
+      height
+    }
+  }
+}

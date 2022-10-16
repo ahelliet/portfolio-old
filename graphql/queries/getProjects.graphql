@@ -1,0 +1,13 @@
+query getProjects {
+  projects(stage: PUBLISHED){
+    id
+    name
+    slug
+    link
+    image{
+      url
+      height
+      width
+    }
+  }
+}

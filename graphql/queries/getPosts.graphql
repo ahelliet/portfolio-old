@@ -1,0 +1,26 @@
+query getPosts {
+  posts(stage: PUBLISHED, orderBy: createdAt_DESC) {
+    title
+    slug
+    intro
+    tags {
+      label
+      slug
+    }
+    createdAt
+    content {
+      html
+    }
+    authors {
+      id
+      intro
+      name
+      slug
+      picture {
+        height
+        width
+        url
+      }
+    }
+  }
+}

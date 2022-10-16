@@ -1,0 +1,14 @@
+overwrite: true
+schema: "https://api-eu-central-1.graphcms.com/v2/cl3xjl1pn0lwh01z7e3t2bqyz/master"
+documents: "./**/*.graphql"
+generates:
+  graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - 'typescript-react-query'
+    config:
+      fetcher: graphql-request
+      exposeQueryKeys: true
+      exposeFetcher: true
+      omitOperationSuffix: true
