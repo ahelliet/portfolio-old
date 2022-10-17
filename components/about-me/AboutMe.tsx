@@ -50,9 +50,10 @@ const AboutMe: React.FC<IAboutMe> = ({ me, skills, socials }) => {
                             </h1>
                             <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                                 Je suis actuellement à la recherche {"d'un"} poste ou {"d'une"} alternance en tant que développeur full stack au sein de {"l'école"} MyDigitalSchool {"d'Annecy"}. Si mon profil vous intéresse, consultez mon <a
-                                    href="/cv.pdf"
+                                    // TODO: Save CV to a S3 bucket and get url back
+                                    href="https://github.com/ahelliet/portfolio/blob/main/public/cv-anthony-helliet.pdf"
                                     target="__blank"
-                                    download={'CV.pdf'}
+
                                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 hover:text-orange-500"
                                 >
                                     CV
