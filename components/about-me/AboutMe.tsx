@@ -81,6 +81,18 @@ const AboutMe: React.FC<IAboutMe> = ({ me, skills, socials }) => {
                             </div>
                             <div className="flex flex-row justify-start items-center cursor-pointer">
                                 <a
+                                    href={"https://github.com/ahelliet"}
+                                    className="flex flex-row items-center space-x-4 group"
+                                >
+                                    <div className="my-4">&rarr;</div>
+                                    <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                                        <span className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></span>
+                                        Github
+                                    </p>
+                                </a>
+                            </div>
+                            <div className="flex flex-row justify-start items-center cursor-pointer">
+                                <a
                                     href={socials[0].linkedinUrl as string}
                                     className="flex flex-row items-center space-x-4 group"
                                 >
