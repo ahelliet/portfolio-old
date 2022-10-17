@@ -7,13 +7,14 @@ interface IProject {
 }
 
 const ProjectCard: React.FC<IProject> = ({ project, number }) => {
+    //TODO: replace img with next Image 
     return (
         <a href={String(project.link)} className="w-full block shadow-2xl">
             <div className="relative overflow-hidden">
                 <div className="h-72 object-cover">
-                    <Image
-                        src={String(project.image?.url)}
-                        layout="responsive"
+                    <img
+                        src={project.image?.url as string}
+                        // layout="responsive"
                         width={Number(project.image?.width)}
                         height={Number(project.image?.height)}
                         alt={String(project.name)}
